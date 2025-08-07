@@ -1,6 +1,8 @@
 # pico-speedrunning
 Source code for PICO-8 cartridge speedrunning using Celia
+
 This code was originally written in <8 hours for [Dagstuhl 24216](https://drops.dagstuhl.de/entities/document/10.4230/DagRep.14.6.130)
+
 *This code is incomplete*
 
 ## Setup
