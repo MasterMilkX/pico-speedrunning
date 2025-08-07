@@ -152,24 +152,24 @@ def start_pipe():
     time.sleep(1)
 
     # start up command
-    try:
-        print("[PPP] Using start_up.tas to start the game past menu")
-        start_up = []
-        with open(os.path.join(f'{TAS_DAT_LOCATION}',f'{GAME_NAME}-start_up.tas'), "r") as f:
-            start_up = f.read().split(",")
-            f.close()
-        play_tas(start_up)
-    except:
-        print("[PPP] No start_up.tas found")
-        # time.sleep(2)
+    # try:
+    #     print("[PPP] Using start_up.tas to start the game past menu")
+    #     start_up = []
+    #     with open(os.path.join(f'{TAS_DAT_LOCATION}',f'{GAME_NAME}-start_up.tas'), "r") as f:
+    #         start_up = f.read().split(",")
+    #         f.close()
+    #     play_tas(start_up)
+    # except:
+    #     print("[PPP] No start_up.tas found")
+    #     # time.sleep(2)
 
     # time.sleep(1)
 
 
     # random inputs
-    # for i in range(500):
-    #     randInputFrame()
-    #     time.sleep(0.03)
+    for i in range(500):
+        randInputFrame()
+        time.sleep(0.03)
 
     # get the screenshot
     # print(get_screenshot())
@@ -178,10 +178,10 @@ def start_pipe():
     ### TEST EXPERIMENTS ###
 
     # make a random TAS file
-    print("[PPP] Making a random file!")
-    rtas = random_tas(100)
-    print(f"[PPP] {rtas}")
-    time.sleep(2)
+    # print("[PPP] Making a random file!")
+    # rtas = random_tas(100)
+    # print(f"[PPP] {rtas}")
+    # time.sleep(2)
 
 
     # load the TAS file with "shift-W"
@@ -189,11 +189,11 @@ def start_pipe():
     # reset_run()
 
     # load the TAS file
-    print("[PPP] Loading TAS file")
-    load_tas()
+    # print("[PPP] Loading TAS file")
+    # load_tas()
 
-    # play the TAS file
-    play_thru(len(rtas))
+    # # play the TAS file
+    # play_thru(len(rtas))
 
     # iterate for 100 frames
     # print(f"[PPP] Forward 100 frames")
